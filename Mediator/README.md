@@ -144,7 +144,7 @@ MediatR Pipeline behaviours were introduced in Version 3, enabling you execute v
 Lets implement a behaviour for logging, create a new class called `LoggingBehaviour` that implements the `IPipelineBehavior` interface:
 
 ```csharp
-using MediatR;
+using MediatR; 
 
 namespace Mediatr.CQRS.Example.Behaviours;
 public class LoggingBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
